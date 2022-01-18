@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import {Badge} from '@material-ui/core'
 import {Search, ShoppingCartOutlined} from '@material-ui/icons'
@@ -38,7 +37,7 @@ const SearchContainer = styled.div`
    
 `;
 const Input = styled.input`
-  border:none;
+  border: none;
 `
 const Center = styled.div`
  flex: 1;
