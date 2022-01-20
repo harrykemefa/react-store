@@ -37,7 +37,7 @@ const Link = styled.a`
  font-weight: 600;
  padding: 10px;
  cursor: pointer;
-`
+`;
 
 
 const FooterLogo = styled.h2`
@@ -58,7 +58,7 @@ const FooterLogo = styled.h2`
         height: 1px;
     }
 
-`
+`;
 
  const SocialContainer = styled.div`
   display: flex;
