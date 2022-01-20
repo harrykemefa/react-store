@@ -27,4 +27,71 @@ export const sliderItems = [
     },
 ];
 
-export default sliderItems;
+export const categoryList = [
+    {
+        id: 1,
+        img: './img/cat1.jpg',
+        title: "LOUNGE WEARS",
+    },
+
+    {
+        id: 2,
+        img: './img/cat2.jpg',
+        title: "CASUAL WEARS",
+    },
+
+    
+    {
+        id: 3,
+        img: './img/cat3.jpg',
+        title: "WORK WEARS",
+    },
+];
+
+export const featuredProducts = [
+    {
+        id: 1,
+        img: './img/product1.jpg'
+    },
+
+    {
+        id: 2,
+        img: './img/product2.jpg'
+    },
+
+    {
+        id: 3,
+        img: './img/product3.jpg'
+    },
+
+    {
+        id: 4,
+        img: './img/product4.jpg'
+    },
+
+    {
+        id: 5,
+        img: './img/product5.jpg'
+    },
+
+    {
+        id: 6,
+        img: './img/product6.jpg'
+    },
+
+    {
+        id: 7,
+        img: './img/product7.jpg'
+    },
+
+    {
+        id: 8,
+        img: './img/product8.jpg'
+    },
+
+    {
+        id: 9,
+        img: './img/product9.jpg'
+    },
+];
+

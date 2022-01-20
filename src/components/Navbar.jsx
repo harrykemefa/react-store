@@ -26,7 +26,7 @@ const Language = styled.div`
 const Logo = styled.h1`
     font:weight: 300;
    
-`
+`;
 
 const SearchContainer = styled.div`
    display: flex;
@@ -38,7 +38,10 @@ const SearchContainer = styled.div`
 `;
 const Input = styled.input`
   border: none;
-`
+  &:focus{
+    border: none;
+  }
+`;
 const Center = styled.div`
  flex: 1;
  text-align: center;
@@ -54,7 +57,7 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 10px;
-`
+`;
 
 
 
@@ -72,7 +75,7 @@ const Navbar = ()  => {
                         <Search style={{color:"gray", fontSize:16}} />
                     </SearchContainer>
              </Left>
-              <Center> <Logo>Wealth Clothings</Logo> </Center>
+              <Center> <Logo>DRIP</Logo> </Center>
               <Right> 
                  <MenuItem> Register </MenuItem>
                  <MenuItem>Sign In</MenuItem>
