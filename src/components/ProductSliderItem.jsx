@@ -39,7 +39,7 @@ const Icon = styled.div`
       transform: scale(1.1);
   }
 `;
- const ProductItem = ({item}) =>   {
+ const ProductSliderItem = ({item}) =>   {
    
         return (
             <Container>
@@ -61,4 +61,4 @@ const Icon = styled.div`
     
 }
 
-export default ProductItem;
+export default ProductSliderItem;
