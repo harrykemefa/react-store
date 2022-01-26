@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import {categoryList} from "../data";
 import CategoryItem from "./CategoryItem";
+import {mobile} from '../responsive';
 
 const Container = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
+  ${mobile({ display: "block"})}
+
 `;
 
 const Heading =  styled.div`

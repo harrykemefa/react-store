@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {mobile} from '../responsive';
 
 
 const Container = styled.div`
@@ -7,6 +8,7 @@ const Container = styled.div`
   background: #0e0e0e;
   justify-content: center;
   align-items: center;
+  ${mobile({display: "block", padding: "70px 20px"})}
 
 
 `;
@@ -15,6 +17,7 @@ const Heading = styled.h2`
   flex: 1;
  font-weight: 600;
  color: #fff;
+ ${mobile({marginBottom: "30px", fontSize: "1.4em"})}
 `;
 
 const FormGroup = styled.div`
@@ -22,6 +25,8 @@ flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
+
+${mobile({justifyContent: "space-around"})}
 
 `;
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ShoppingCartOutlined, SearchOutlined, FavoriteBorderOutlined } from '@material-ui/icons';
+import {mobile} from '../responsive';
 
 const Container = styled.div`
  flex: 1;
@@ -10,6 +11,8 @@ const Container = styled.div`
  align-items: center;
  justify-content: center;
  border: 1px solid rgba(0,0,0,.05);
+
+ ${mobile({maxWidth: "380px", height: "400px"})}
 
 `;
 

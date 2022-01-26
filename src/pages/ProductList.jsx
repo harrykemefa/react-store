@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Products from '../components/Products';
 import NewsLetter from '../components/NewsLetter';
 import Footer from '../components/Footer';
+import {mobile} from '../responsive';
 
 
 const Container = styled.div`
@@ -30,7 +31,9 @@ const HeadingText = styled.h2`
        background-color: #000;
        vertical-align: middle;
        height: 1px;
-   }
+   };
+
+   ${mobile({fontSize: "20px"})}
 `;
 
 const FilterContainer = styled.div`
@@ -47,11 +50,13 @@ const FilterText = styled.span`
  font-size: 20px;
  font-weight: 600;
  margin-right: 20px;
+ ${mobile({fontSize: "17px"})}
 `;
 
 const Select = styled.select`
    padding: 10px;
    margin-right: 20px;
+   ${mobile({marginRight: "10px", marginTop: "10px"})}
    
 `;
 

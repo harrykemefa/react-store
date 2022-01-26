@@ -2,6 +2,7 @@ import {useState} from 'react';
 import styled from "styled-components";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import {sliderItems} from "../data";
+import {mobile} from '../responsive';
 
 const Container = styled.div`
 width: 100%;
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
  display: flex;
  transform: translateX(${(props) => props.slideIndex * -100}vw);
  transition: all 1.5s ease;
-
+ 
 `;
 
 const Slide = styled.div`
@@ -53,6 +54,7 @@ const ImgContainer = styled.div`
 const InfoContainer = styled.div`
     flex: 1;
     padding: 50px;
+    ${mobile({ zIndex: "5", position: "absolute", top: "15%", display: "flex", alignItems: "center", flexDirection: "column"})}
 `;
 
 const Image = styled.img`
@@ -61,7 +63,8 @@ const Image = styled.img`
 
 const Title = styled.h1`
  font-size: 60px;
-
+ ${mobile({ fontSize: "30px", textAlign: "center"})}
+ 
 `;
 
 const Desc = styled.p`
@@ -69,6 +72,8 @@ const Desc = styled.p`
  font-size: 20px;
  font-weight: 500;
  letter-spacing: 3px;
+
+ ${mobile({ letterSpacing: "0.5px", fontSize: "15px", textAlign: "center"})}
 `;
 
 const Button = styled.button`

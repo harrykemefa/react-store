@@ -88,10 +88,7 @@ export const featuredProducts = [
         id: 8,
         img: './img/product8.jpg'
     },
+    
 
-    {
-        id: 9,
-        img: './img/product9.jpg'
-    },
 ];
 

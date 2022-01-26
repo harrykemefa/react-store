@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import {mobile} from '../responsive';
  
 const Container = styled.div`
 flex: 1;
 margin: 3px;
 height: 70vh;
 position: relative;
+${mobile({ margin: "10px auto"})}
 `;
 
 const Image = styled.img`
@@ -12,6 +14,7 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 0.5em;
+  ${mobile({ borderRadius: "0"})}
   
 `;
 

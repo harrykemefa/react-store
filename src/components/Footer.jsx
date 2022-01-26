@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Facebook, Instagram, Twitter, Pinterest} from '@material-ui/icons';
-
+import {mobile} from '../responsive';
 const Container = styled.div`
 
     display: flex;
@@ -8,7 +8,7 @@ const Container = styled.div`
     background: #0e0e0e;
     align-items: center;
    
-
+    ${mobile({flexWrap: "wrap", padding: "20px 20px", justifyContent: "space-between"})}
 `;
 
 const LinkGroup = styled.div`
@@ -16,11 +16,13 @@ const LinkGroup = styled.div`
   flex: 1;
   color: #fff;
   justify-content: center;
+  ${mobile({margin: "10px 0"})}
 `;
 
 const Right = styled.div`
 display: flex;
 flex-direction: column;
+${mobile({flexDirection: "row", alignItems: "center",})}
 `;
 
 const Left = styled.div`
@@ -56,7 +58,9 @@ const FooterLogo = styled.h2`
         background-color: #fff;
         vertical-align: middle;
         height: 1px;
-    }
+    };
+
+    ${mobile({margin: "0 10px", fontSize: "22px"})}
 
 `;
 

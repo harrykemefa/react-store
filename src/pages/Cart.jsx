@@ -4,6 +4,7 @@ import Announce from '../components/Announce';
 import Navbar from '../components/Navbar';
 import NewsLetter from '../components/NewsLetter';
 import Footer from '../components/Footer';
+import {mobile} from '../responsive';
 const Container = styled.div`
 
 `;
@@ -110,6 +111,8 @@ font-weight: 600;
 border: 1px solid #000;
 padding: 10px 20px;
 cursor: pointer;
+
+${mobile({padding: "10px 10px", margin: "0 5px"})}
 `;
 
 const Amount = styled.span`
@@ -170,6 +173,7 @@ const Num = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 2em;
+  ${mobile({padding: "0", justifyContent: "space-around"})}
  `;
 
 const Button1 = styled.button`
@@ -186,7 +190,9 @@ cursor: pointer;
    background-color : transparent;
    color: #000;
    border: 1px solid gray;
-}
+};
+
+${mobile({padding: "13px 25px"})}
 `;
 
 const Button2 = styled.button`
@@ -202,7 +208,9 @@ cursor: pointer;
    background-color : #000;
    color: #fff;
    border: 1px solid gray;
-}
+};
+
+${mobile({padding: "13px 25px"})}
 `;
 
 

@@ -35,6 +35,11 @@
     background-color: #fff;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
 
+html{
+    overflow-x: hidden; 
+}
 body{
     font-family: 'Urbanist';
+    overflow-x: hidden;
+
 }

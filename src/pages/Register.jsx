@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {mobile} from '../responsive';
 const Container = styled.div`
     width: 100vw;
     height: 100vh;
@@ -9,11 +10,15 @@ const Container = styled.div`
      display: flex;
      align-items: center;
      justify-content: center;
+
+     ${mobile({backgroundPositionX: "center"})}
 `;
 const Wrapper = styled.div`
     width: 40%;
     padding: 20px;
     background-color: #fff;
+
+    ${mobile({width: "80%"})}
 `;
 const Form = styled.form`
   display: flex;

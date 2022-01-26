@@ -33,7 +33,7 @@ z-index: 2;
 
 const Wrapper = styled.div`
 display: flex;
-transform: translateX(${(props) => props.slideIndex * -20}vw);
+transform: translateX(${(props) => props.slideIndex * -100}vw);
 transition: all 1.5s ease;
 `;
 
@@ -65,9 +65,9 @@ const HeadingText = styled.h2`
     const handleClick = (direction) => {
 
         if(direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex-1 : 5);
+            setSlideIndex(slideIndex > 0 ? slideIndex-1 : 1);
         }else{
-            setSlideIndex(slideIndex < 5 ? slideIndex+1 : 0);
+            setSlideIndex(slideIndex < 1 ? slideIndex+1 : 0);
         }
     };
    

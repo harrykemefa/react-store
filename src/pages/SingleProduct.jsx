@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import ProductSlider from '../components/ProductSlider';
 import NewsLetter from '../components/NewsLetter';
 import Footer from '../components/Footer';
+import {mobile} from '../responsive';
 
 const Container = styled.div`
   
@@ -38,6 +39,7 @@ const BreadCrumbs = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${mobile({padding: "20px 20px"})}
 
 `;
 
@@ -74,6 +76,7 @@ const Wrapper = styled.div`
  justify-content: center;
  align-items: flex-start;
  padding: 20px;
+ ${mobile({display: "block"})}
  
 `;
 
@@ -118,6 +121,7 @@ const Image = styled.img`
     height: 100vh;
     object-fit: cover;
     margin: 20px;
+    ${mobile({width: "80vw", height: "60vh"})}
 `;
 
 const FilterContainer = styled.div`
@@ -151,6 +155,7 @@ const Option = styled.option`
   align-items: center;
   justify-content: space-around;
   margin: 10px 0;
+  ${mobile({width: "100%"})}
  `;
 
  const AmountWrapper = styled.div`
