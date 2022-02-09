@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ProductSliderItem from './ProductSliderItem';
 import {featuredProducts} from '../data';
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
-
+import Slider from "react-slick";
 
 const Container = styled.div`
  display: flex;
@@ -60,16 +60,50 @@ const HeadingText = styled.h2`
        height: 1px;
    }
 `;
- const ProductSlider = () =>   {
-    const [slideIndex, setSlideIndex] = useState(0);
-    const handleClick = (direction) => {
 
-        if(direction === "left") {
-            setSlideIndex(slideIndex > 0 ? slideIndex-1 : 1);
-        }else{
-            setSlideIndex(slideIndex < 1 ? slideIndex+1 : 0);
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-    };
+      ]
+  };
+ const ProductSlider = () =>   {
+    // const [slideIndex, setSlideIndex] = useState(0);
+    // const handleClick = (direction) => {
+
+    //     if(direction === "left") {
+    //         setSlideIndex(slideIndex > 0 ? slideIndex-1 : 1);
+    //     }else{
+    //         setSlideIndex(slideIndex < 1 ? slideIndex+1 : 0);
+    //     }
+    // };
    
 
   //  console.log(slideIndex);
@@ -81,21 +115,17 @@ const HeadingText = styled.h2`
                 NEW ARRIVALS
             </HeadingText>
         </Heading>
-            <Container>
-                    <Arrow direction="left"  onClick={() => handleClick("left")}>
-                <ArrowLeftOutlined />
-            </Arrow>
+           
 
-            <Wrapper  slideIndex={slideIndex}>
-               {featuredProducts.map(item => (
-                   <ProductSliderItem item={item} key={item.id} />
-               ))}
-            </Wrapper>
-
-               <Arrow direction="right"  onClick={() => handleClick("right")}>
-                <ArrowRightOutlined />
-            </Arrow>
-            </Container>
+<div>
+  
+    <Slider {...settings}>
+    {featuredProducts.map(item => (
+       <ProductSliderItem item={item} key={item.id} />
+   ))}
+      
+    </Slider>
+  </div>
             </>
         )
     

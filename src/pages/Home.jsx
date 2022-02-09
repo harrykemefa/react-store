@@ -1,7 +1,7 @@
 import React from 'react'
 import Announce from '../components/Announce';
 import Navbar from '../components/Navbar';
-import Slider from '../components/Slider';
+import MainSlider from '../components/MainSlider';
 import Categories from '../components/Categories';
 import ProductSlider from '../components/ProductSlider';
 import NewsLetter from '../components/NewsLetter';
@@ -14,7 +14,7 @@ const Home = () => {
         <div>
             <Announce />
          <Navbar />
-         <Slider />
+         <MainSlider />
          <Categories />
          <ProductSlider />
          <NewsLetter />
